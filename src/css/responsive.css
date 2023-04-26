@@ -1,0 +1,110 @@
+@media (max-width:1340px) {
+    .container {
+        grid-template-columns: 250px repeat(3, 250px);
+        grid-template-rows: 250px 250px;
+    }
+
+    .categories .info-dash div:last-child h2 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width:1150px) {
+    body{
+        padding: 50px 30px;
+    }
+
+    .container {
+        grid-template-areas:
+            "profile profile profile"
+            "work play study"
+            "exercise social self-care";
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: 1fr repeat(2, 230px);
+    }
+
+    .container .profile{
+        grid-template-rows: 1fr;
+    }
+
+    .container .profile .user-info{
+        flex-direction: row;
+        padding: 50px 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .container .profile .user-info .name{
+        margin-bottom: 0;
+    }
+
+    .container .profile .period{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0px;
+    }
+
+    .container .profile .period li a{
+        margin-bottom: 0px;
+    }
+
+    .categories .info-dash div:last-child h2{
+        font-size: 60px;
+    }
+}
+
+@media (max-width:860px) {
+    .container{
+        grid-template-columns: repeat(3, 200px);
+    }
+
+    .categories .info-dash div:last-child h2{
+        font-size: 55px;
+    }
+}
+
+@media (max-width:720px){
+    .container {
+        grid-template-areas:
+            "profile profile"
+            "work play"
+            "study exercise"
+            "social self-care";
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: 1fr repeat(3, 230px);
+    }
+}
+
+@media (max-width:623px){
+    .container {
+        grid-template-areas:
+            "profile"
+            "work "
+            "play"
+            "study"
+            "exercise"
+            "social"
+            "self-care";
+            grid-template-columns:  1fr;
+            grid-template-rows: 2fr repeat(6, 200px);
+    }
+
+    .container .profile .user-info{
+        padding: 50px 30px;
+    }
+
+    .container .profile .user-info .name{
+        font-size: 40px;
+    }
+
+    .container .categories .info-dash{
+        justify-content: space-evenly;
+    }
+
+    .categories .info-dash div:last-child{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
